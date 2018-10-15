@@ -1,0 +1,17 @@
+.content-container{
+  @include flexbox;
+  height:100vh;
+  width:100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+textarea{
+  min-height:500px;
+  height:auto;
+}
+.wrap{
+  height:300px;
+  @include breakpoint($tab){
+    height:675px;
+  }
+}
