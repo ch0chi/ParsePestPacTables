@@ -12,6 +12,7 @@
 <body>
 
 <div class="content-container">
+
     <div class="columns max-width">
         <div class="column">
             <div class="card">
@@ -35,9 +36,13 @@
             <div class="card">
                 <div class="card-content wrap">
                     <div class="field">
-                        <label class="label">Result</label>
+                        <div class="field-elements">
+                            <label class="label result-label">Result</label><i class="fa fa-clone copy-text"></i>
+                            <div class="notification is-primary copied">Copied!</div>
+                        </div>
+
                         <div class="control">
-                            <textarea id="parse-results" class="textarea" placeholder="Result"></textarea>
+                            <textarea contenteditable="true" id="parse-results" class="textarea" placeholder="Result"></textarea>
                         </div>
                     </div>
                 </div>
